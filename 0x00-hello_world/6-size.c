@@ -3,7 +3,7 @@
  *main - print sizes of various variables
  *Return: Always 0 (Success)
  */
-int main(void)
+int main - Entry point
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));
 	printf("Size of an int: %d byte(s)\n", sizeof(int));
