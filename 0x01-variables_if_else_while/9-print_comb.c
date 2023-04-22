@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - prints combination of digits
+ * main - combination of digits
  * Return: Always 0 (Success)
  */
 int main(void)
