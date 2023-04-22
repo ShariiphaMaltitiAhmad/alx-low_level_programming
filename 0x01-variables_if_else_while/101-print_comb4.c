@@ -3,27 +3,27 @@
 #include <stdio.h>
 
 /**
- * main - different combinations of three digits
+ * main - three digits
  * Return: Always 0 (Success)
  */
 
 int main(void)
 
 {
-	int a, b, c;
+	int n, m, l;
 
-	for (a = '0'; a < '9'; a++)
+	for (n = 48; n < 58; n++)
 	{
-		for (b = a + 1; b <= '9'; b++)
+		for (m = 49; m < 9; m++)
 		{
-			for (c = b + 1; c <= '9'; c++)
+			for (l = 50; l < 58; l++)
 			{
-				if ((b != a) != c)
+				if (l > m && m > n)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(c);
-					if (a == '7' && b == '8')
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
 						continue;
 					putchar(',');
 					putchar(' ');
@@ -31,5 +31,7 @@ int main(void)
 			}
 		}
 	}
+	putchar('\n');
+	return (0);
 }
 
