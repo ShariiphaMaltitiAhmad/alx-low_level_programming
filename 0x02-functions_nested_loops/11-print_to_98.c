@@ -1,8 +1,10 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - prints all natural numbers
  * from n to 98
+ *
  * @n: input number
+ *
  * Return: no return
  */
 void print_to_98(int n)
@@ -12,7 +14,7 @@ void print_to_98(int n)
 	{
 		for (; n > 98; n--)
 		{
-			ptintf("%d, ", n);
+			printf("%d, ", n);
 		}
 	}
 	else if (n < 98)
